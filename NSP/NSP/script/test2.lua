@@ -1,4 +1,4 @@
-pf = package.loadlib("mylib.dll","MyMessageBox")  
+pf = package.loadlib("elua_hello.dll","MyMessageBox")  
   
 print(pf)  
 pf("hello", "again")  

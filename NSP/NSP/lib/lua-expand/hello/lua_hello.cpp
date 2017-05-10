@@ -41,7 +41,7 @@ static const struct luaL_Reg mylib[] =
     {NULL, NULL}
 };
 
-extern "C" int __declspec(dllexport) luaopen_mylib(lua_State *L)
+extern "C" int __declspec(dllexport) luaopen_elua_hello(lua_State *L)
 {
     luaL_newlib(L, mylib);
     return 1;
