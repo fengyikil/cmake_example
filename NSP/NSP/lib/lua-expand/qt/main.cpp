@@ -1,6 +1,7 @@
 #include<QApplication>
 #include<Windows.h>
 #include "mainwindow.h"
+#include "myMesg.h"
 //class ui_thread: public QThread
 //{
 //public:
@@ -25,6 +26,7 @@ DWORD WINAPI ThreadOne(LPVOID lpParameter)
     return 0;
 }
 
+static myMesg msg;
 int main()
 {
     HANDLE HOne;

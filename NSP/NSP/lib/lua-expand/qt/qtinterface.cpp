@@ -12,11 +12,15 @@ extern "C"{
 #include<QApplication>
 #include <QThread>
 #include "mainwindow.h"
+#include "myMesg.h"
+
+static myMesg msg;
 DWORD WINAPI ThreadUi(LPVOID lpParameter)
 {
     int b = 1;
     QApplication app(b, NULL);
     MainWindow w;
+    QObject::connect(&msg,SIGNAL(notify_gui(QString)),&w,SLOT(rec_string(QString)));
     w.show();
     app.exec();
 
@@ -28,10 +32,18 @@ static int init_gui(lua_State *L)
     HOne=CreateThread(NULL,0,ThreadUi,NULL,0,NULL);
     return 1;
 }
+static int send_gui(lua_State *L)
+{
+
+    QString str = lua_tostring(L, 1);
+    msg.notify_gui(str);
+    return 1;
+}
 
 static const struct luaL_Reg mylib[] =
 {
 {"init_gui", init_gui},
+{"send_gui", send_gui},
 {NULL, NULL}
 };
 
