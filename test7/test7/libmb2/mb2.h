@@ -1,4 +1,4 @@
-#ifndef DBZHANG_MB2_
+﻿#ifndef DBZHANG_MB2_
 #define DBZHANG_MB2_
 #if defined _WIN32
     #if LIBMB2_BUILD

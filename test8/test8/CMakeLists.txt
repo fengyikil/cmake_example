@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8)
+ï»¿cmake_minimum_required(VERSION 2.8)
 project(t8)
 
 aux_source_directory(. LIB_SRC)
@@ -7,6 +7,6 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 add_executable(t8_1 ${LIB_SRC})
 add_executable(t8_2 ${LIB_SRC})
 
-#ÏÂÃæÊÇ²âÊÔĞÂÀÏ·½·¨£¬×¢ÊÍÆäÖĞÒ»¸ö²âÊÔ£¬¿´Ğ§¹û.
-#add_definitions("-DTEST_DEF") #ÀÏÊ½Ìí¼ÓºêµÄ·½·¨,Ó°ÏìÕû¸ö·¶Î§
-set_target_properties(t8_1 PROPERTIES COMPILE_DEFINITIONS "TEST_DEF") #ĞÂÊ½Ìí¼ÓºêµÄ·½·¨,Ö»Ó°Ïìµ±Ç°Ä¿±ê(target)
+#ä¸‹é¢æ˜¯æµ‹è¯•æ–°è€æ–¹æ³•ï¼Œæ³¨é‡Šå…¶ä¸­ä¸€ä¸ªæµ‹è¯•ï¼Œçœ‹æ•ˆæœ.
+#add_definitions("-DTEST_DEF") #è€å¼æ·»åŠ å®çš„æ–¹æ³•,å½±å“æ•´ä¸ªèŒƒå›´
+set_target_properties(t8_1 PROPERTIES COMPILE_DEFINITIONS "TEST_DEF") #æ–°å¼æ·»åŠ å®çš„æ–¹æ³•,åªå½±å“å½“å‰ç›®æ ‡(target)

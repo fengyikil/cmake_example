@@ -1,14 +1,14 @@
-cmake_minimum_required(VERSION 2.8)
+О╩©cmake_minimum_required(VERSION 2.8)
 project(t5)
-#иХжцж╢ппнд╪ЧйДЁЖб╥╬╤
+#Х╝╬Г╫╝Ф┴╖Х║▄Ф√┤Д╩╤Х╬⌠Е┤╨Х╥╞Е╬└
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
-#лМ╪свсдё©Ид©б╪
+#Ф╥╩Е┼═Е╜░Ф╗║Е²≈Г⌡╝Е╫∙
 add_subdirectory(hello)
-#лМ╪см╥нд╪Ч╡Иурд©б╪
+#Ф╥╩Е┼═Е╓╢Ф√┤Д╩╤Ф÷╔Ф┴╬Г⌡╝Е╫∙
 include_directories(${PROJECT_SOURCE_DIR}/hello)
 
 aux_source_directory(. LIB_SRC)
 add_executable(t5 ${LIB_SRC})
-#а╢╫свсдё©И©Б
+#И⌠╬Ф▌╔Е╜░Ф╗║Е²≈Е╨⌠
 target_link_libraries(t5 lhello)
 

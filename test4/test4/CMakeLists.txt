@@ -1,8 +1,8 @@
-cmake_minimum_required(VERSION 2.8)
+ï»¿cmake_minimum_required(VERSION 2.8)
 project(t4)
-#ÉèÖÃÖ´ĞĞÎÄ¼şÊä³öÂ·¾¶
+#è®¾ç½®æ‰§è¡Œæ–‡ä»¶è¾“å‡ºè·¯å¾„
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
-#Ìí¼ÓÍ·ÎÄ¼ş²éÕÒÄ¿Â¼
+#æ·»åŠ å¤´æ–‡ä»¶æŸ¥æ‰¾ç›®å½•
 include_directories(${PROJECT_SOURCE_DIR}/hello)
 
 aux_source_directory(. LIB_SRC)

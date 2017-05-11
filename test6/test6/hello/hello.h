@@ -1,4 +1,4 @@
-#ifndef HELLO_H
+﻿#ifndef HELLO_H
 #define HELLO_H
 #if defined _WIN32
     #if LIBHELLO_BUILD

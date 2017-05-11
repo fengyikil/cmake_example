@@ -1,4 +1,4 @@
-#include<QApplication>
+﻿#include<QApplication>
 #include<Windows.h>
 #include "mainwindow.h"
 #include "myMesg.h"

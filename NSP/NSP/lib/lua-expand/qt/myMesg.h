@@ -1,4 +1,4 @@
-#ifndef MYMESG_H
+﻿#ifndef MYMESG_H
 #define MYMESG_H
 #include <QObject>
 class myMesg:public QObject

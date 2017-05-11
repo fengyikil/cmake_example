@@ -1,6 +1,6 @@
-cmake_minimum_required(VERSION 2.8)
+锘縞make_minimum_required(VERSION 2.8)
 project(t3)
-#设置执行文件输出路径
+#璁剧疆鎵ц鏂囦欢杈撳嚭璺緞
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 aux_source_directory(. LIB_SRC)
 add_executable(t3 ${LIB_SRC})
