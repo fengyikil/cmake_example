@@ -8,7 +8,7 @@ add_library(lhello SHARED ${LIB_SRC})
 add_library(lhellos STATIC ${LIB_SRC})
 
 #旧添加宏
-#add_definitions("-DMYDLL")
+#add_definitions("-USEDLL")
 #add_definitions("-DLIBHELLO_BUILD")
 
 #新添加宏，连续添加两个有问题，原因未名？采用target_compile_definitions添加
