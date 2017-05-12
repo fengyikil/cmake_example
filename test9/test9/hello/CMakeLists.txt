@@ -15,4 +15,4 @@ add_library(lhellos STATIC ${LIB_SRC})
 #set_target_properties(lhello PROPERTIES COMPILE_DEFINITIONS "MYDLL")
 #set_target_properties(lhello PROPERTIES COMPILE_DEFINITIONS "LIBHELLO_BUILD")
 
-target_compile_definitions(lhello PRIVATE LIBHELLO_BUILD=1 USEDLL=1)
+target_compile_definitions(lhello PRIVATE SPACE_DLL_BUILD=1 SPACE_USE_DLL=1)
